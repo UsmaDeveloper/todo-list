@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(270deg, #eca877);
+  animation: gradientBG 15s ease infinite;
+  background-size: 800% 800%;
+}
+
+/* animation keyframes */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.todo-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+.input-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+.input-group button {
+  padding: 10px 15px;
+  border: none;
+  background: #2ecc71;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.input-group:hover .addbtn {
+  background-color: green;
+}
+
+.todo-container :hover {
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  background: #f1f1f1;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btns button {
+  border: none;
+  margin-left: 5px;
+  padding: 5px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.edit {
+  background: #3498db;
+  color: white;
+}
+.delete {
+  background: #9c7b77;
+  color: white;
+}
